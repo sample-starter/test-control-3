@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>input-artifact</name>
     <description>sample pom.xml</description>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -101,6 +102,11 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+
         <!-- Jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -162,7 +168,19 @@
 
 
     <build>
-
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- Enable Spring Maven plugin so a standalone jar is created during `package` -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
         <!-- this adds commands to the mvn -->
         <pluginManagement>
             <plugins>
@@ -260,11 +278,6 @@
                     </executions>
                 </plugin>
 
-                <!-- Enable Spring Maven plugin so a standalone jar is created during `package` -->
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                </plugin>
             </plugins>
         </pluginManagement>
     </build>
