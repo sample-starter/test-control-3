@@ -18,6 +18,8 @@
     <version.maven.surefire.junit>3.0.0-M8</version.maven.surefire.junit>
     <version.maven.plugin.failsafe>3.0.0-M8</version.maven.plugin.failsafe>
     <version.maven.plugin.checkstyle>3.1.2</version.maven.plugin.checkstyle>
+    <org.projectlombok.version>1.18.20</org.projectlombok.version>
+    <maven.surefire.version>2.22.2</maven.surefire.version>
     <!-- For testing -->
     <version.junit-jupiter>5.9.1</version.junit-jupiter>
     <skip.unit.tests>false</skip.unit.tests>
@@ -33,12 +35,6 @@
             **/dto/*.java,
             **/dto/exceptions/*.java,
             **/Application.java</sonar.exclusions>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
     <dependency>
@@ -97,37 +93,6 @@
     <dependency>
       <artifactId>micrometer-core</artifactId>
       <groupId>io.micrometer</groupId>
-    </dependency>
-    <dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-security</artifactId>
-      <version>1.7.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka-test</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
   <!--ORG level distribution Management -->

@@ -23,6 +23,8 @@
         <version.maven.surefire.junit>3.0.0-M8</version.maven.surefire.junit>
         <version.maven.plugin.failsafe>3.0.0-M8</version.maven.plugin.failsafe>
         <version.maven.plugin.checkstyle>3.1.2</version.maven.plugin.checkstyle>
+        <org.projectlombok.version>1.18.20</org.projectlombok.version>
+        <maven.surefire.version>2.22.2</maven.surefire.version>
 
         <!-- For testing -->
         <version.junit-jupiter>5.9.1</version.junit-jupiter>
