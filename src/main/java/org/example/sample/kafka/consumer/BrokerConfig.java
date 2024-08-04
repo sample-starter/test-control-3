@@ -1,8 +1,8 @@
 package org.example.sample.kafka.consumer;
 
 import org.apache.kafka.clients.CommonClientConfigs;
-import org.example.kafka.config.KafkaConfig;
-import org.example.kafka.config.KafkaSecuredConfig;
+import org.example.sample.kafka.config.KafkaConfig;
+import org.example.sample.kafka.config.KafkaSecuredConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
