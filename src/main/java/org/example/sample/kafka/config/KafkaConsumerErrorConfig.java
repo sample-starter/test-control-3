@@ -1,4 +1,4 @@
-package org.example.sample.kafka;
+package org.example.sample.kafka.config;
 
 import com.fasterxml.jackson.databind.exc.ValueInstantiationException;
 import lombok.extern.slf4j.Slf4j;

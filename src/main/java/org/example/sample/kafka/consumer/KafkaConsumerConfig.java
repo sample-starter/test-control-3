@@ -1,4 +1,4 @@
-package org.example.sample.kafka;
+package org.example.sample.kafka.consumer;
 
 import org.example.kafka.config.BaseKafkaConsumerConfig;
 import org.example.kafka.config.KafkaConfig;

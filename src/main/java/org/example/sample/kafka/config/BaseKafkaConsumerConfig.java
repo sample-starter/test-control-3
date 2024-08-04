@@ -1,4 +1,4 @@
-package org.example.sample.kafka;
+package org.example.sample.kafka.config;
 
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tag;
