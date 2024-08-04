@@ -1,7 +1,7 @@
-package org.example.kafka.consumer;
+package org.example.sample.kafka;
 
-import org.example.initializer.kafka.config.BaseKafkaConsumerConfig;
-import org.example.initializer.kafka.config.KafkaConfig;
+import org.example.kafka.config.BaseKafkaConsumerConfig;
+import org.example.kafka.config.KafkaConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
